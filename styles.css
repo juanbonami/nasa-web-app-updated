@@ -4,6 +4,25 @@ body {
     margin: 0;
 }
 
+header {
+    height: 70vh;
+    background-image: url('/images/724388.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: antiquewhite;
+    text-shadow: 6px 6px 6px black;
+}
+
+h1 {
+    margin: 0;
+}
+
 .header {
     text-align: center;
 }

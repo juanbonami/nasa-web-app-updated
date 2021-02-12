@@ -11,7 +11,6 @@ Http.onreadystatechange = (e) => {
     response = JSON.parse(Http.responseText);
     console.log(e);
     console.log(response);
-    console.log(response.hdurl);
 
     let header = document.querySelector('.header');
     let copyright = document.querySelector('.copyright');
@@ -27,6 +26,8 @@ Http.onreadystatechange = (e) => {
             explination.innerHTML = `${response.explanation}`;
             hdurl.innerHTML = `<img src="${response.hdurl}" alt="img"></img>`;
         }
+    
+    Http.abort();
 
 }
 

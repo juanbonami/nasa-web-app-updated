@@ -18,13 +18,20 @@ Http.onreadystatechange = (e) => {
     let explination = document.querySelector('.explination');
     let hdurl = document.getElementById('hdurl');
 
-        if (e.returnValue) {
+        if (e.returnValue && response.media_type == 'image') {
             console.log('it works');
             header.innerHTML = `${response.title}`;
             copyright.innerHTML = `${response.copyright}`;
             date.innerHTML = `${response.date}`;
             explination.innerHTML = `${response.explanation}`;
             hdurl.innerHTML = `<img src="${response.hdurl}" alt="img"></img>`;
+        }
+        else if (e.returnValue && response.media_type == 'video') {
+            header.innerHTML = `${response.title}`;
+            copyright.innerHTML = `${response.copyright}`;
+            date.innerHTML = `${response.date}`;
+            explination.innerHTML = `${response.explanation}`;
+            hdurl.innerHTML = `<iframe width="100%" height="100%" frameborder="0" src="${response.url}"></iframe>`;
         }
     
     Http.abort();

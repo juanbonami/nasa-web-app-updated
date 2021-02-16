@@ -60,8 +60,13 @@ img {
 
 #hdurl {
     min-width: 50%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0 16px;
+}
+
+iframe {
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .explination {
@@ -81,11 +86,15 @@ img {
     margin: 2rem 2rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .image-explanation-wrapper {
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+
+    iframe {
+        min-height: 20em;
     }
 
     .explination {

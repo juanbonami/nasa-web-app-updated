@@ -31,7 +31,7 @@ Http.onreadystatechange = (e) => {
             copyright.innerHTML = `${response.copyright}`;
             date.innerHTML = `${response.date}`;
             explination.innerHTML = `${response.explanation}`;
-            hdurl.innerHTML = `<iframe width="100%" height="100%" frameborder="0" src="${response.url}"></iframe>`;
+            hdurl.innerHTML = `<iframe frameborder="0" src="${response.url}"></iframe>`;
         }
     
     Http.abort();

@@ -111,16 +111,18 @@ iframe {
 
 /* *************** FOOTER ************** */
 
-.footer { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer {
     padding: 1rem;
 }
 
 footer {
     height: 25vh;
     background-color: rgb(179, 182, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .footer p {

@@ -122,12 +122,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-top: 15rem;
 }
 
 .footer p {
     margin: 0;
     font-size: 0.79rem;
+    letter-spacing: 0.5rem;
+    border-bottom: solid 1px;
+    padding-bottom: 2rem;
 }
 
 .fa {

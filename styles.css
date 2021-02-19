@@ -128,3 +128,11 @@ footer {
 .footer p {
     margin: 0;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+  }
